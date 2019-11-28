@@ -16,7 +16,8 @@ export default function login(email, password) {
         password
       }
     }).then(token => {
-      api("/me", { jwt: token.jwt }).then(profile =>
+      api("/me", { jwt: token.jwt })
+      .then(profile =>
         dispatch(userLoggedIn(token.jwt, profile))
       );
     });

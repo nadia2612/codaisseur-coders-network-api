@@ -2,7 +2,7 @@ import React from "react";
 
 export default class Homepage extends React.Component {
   render() {
-    let styles = { width: "820px" };
+    let styles = { width: "420px" };
     return (
       <div>
         <img

@@ -2,7 +2,8 @@
 import api from "../../api";
 
 export default function fetchDevelopers(dispatch, getState) {
-  api("/developers").then(data => {
+  api("/developers?offset=1&limit=220")
+  .then(data => {
     // note: just `dispatch` here now
     console.log(data, "FetchDev");
     dispatch(developersFetched(data));
