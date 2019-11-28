@@ -7,6 +7,7 @@ import Toolbar from './components/Toolbar';
 import PostPage from './components/PostPage'
 import LoginPage from "./components/LoginPage"
 import PostsList from "./components/PostsList"
+import SignUpPage from "./components/SignUpPage"
 
 export default class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ export default class App extends React.Component {
         <Route path="/read/:id" component={PostPage} />
         <Route path="/login" component={LoginPage} />
         <Route path="/posts" component={PostsList} />
+        <Route path="/signup" component={SignUpPage} />
 
       </div>
     );

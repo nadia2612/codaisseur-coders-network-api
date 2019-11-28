@@ -26,6 +26,9 @@ class Toolbar extends React.Component {
           <nav>
             <Link to="/posts">All posts</Link>
           </nav>
+          <nav>
+            <Link to="/signup">Sign up</Link>
+          </nav>
 
         </ul>
       </div>
