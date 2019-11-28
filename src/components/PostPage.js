@@ -28,6 +28,7 @@ class PostPage extends React.Component {
 }
 
 function mapStateToProps(reduxState) {
+  console.log(reduxState)
   return {
     post: reduxState.post.post,
     comments: reduxState.post.comments

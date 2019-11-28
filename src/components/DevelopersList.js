@@ -1,11 +1,11 @@
 // src/components/DevelopersList.js
-import React from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import Developer from "./Developer";
 import fetchDevelopers from "../store/developers/actions";
 
 // The "unconnected" inner component:
-class DevelopersList extends React.Component {
+class DevelopersList extends Component {
   componentDidMount() {
     // api("/developers").then(data => {
     // this.props.dispatch({
@@ -19,7 +19,7 @@ class DevelopersList extends React.Component {
 
   render() {
     const loading = !this.props.devs;
-    console.log({ props: this.props });
+    console.log("fgfgh",{ props: this.props });
 
     return (
       <div>
@@ -47,7 +47,7 @@ class DevelopersList extends React.Component {
 //  to the inner component:
 
 function mapStateToProps(reduxState) {
-  // console.log("redux state?", reduxState);
+   console.log("redux state?", reduxState);
   return {
     devs: reduxState.developers
   };

@@ -7,15 +7,26 @@ class Toolbar extends React.Component {
     return (
       <div>
         <ul>
-          <li>
+          <nav>
             <Link to="/">Home</Link>
-          </li>
-          <li>
+          </nav>
+
+          <nav>
             <Link to="/developers">Developers</Link>
-          </li>
-          <li>
-            {this.props.profile ? <div>Logged in: {this.props.profile.name}</div> : <Link to="/login">Log in</Link>}
-          </li>
+          </nav>
+
+          <nav>
+           
+            {this.props.profile ? (
+              <div>Logged in: {this.props.profile.name}</div>
+            ) : (
+              <Link to="/login">Log in</Link>
+            )}
+          </nav>
+          <nav>
+            <Link to="/posts">All posts</Link>
+          </nav>
+
         </ul>
       </div>
     );

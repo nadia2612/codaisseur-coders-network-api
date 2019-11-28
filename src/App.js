@@ -6,6 +6,7 @@ import DevelopersList from "./components/DevelopersList"
 import Toolbar from './components/Toolbar';
 import PostPage from './components/PostPage'
 import LoginPage from "./components/LoginPage"
+import PostsList from "./components/PostsList"
 
 export default class App extends React.Component {
   render() {
@@ -18,6 +19,8 @@ export default class App extends React.Component {
         </Switch>
         <Route path="/read/:id" component={PostPage} />
         <Route path="/login" component={LoginPage} />
+        <Route path="/posts" component={PostsList} />
+
       </div>
     );
   }
