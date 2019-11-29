@@ -21,6 +21,7 @@ class PostPage extends React.Component {
         <h2>{comments.map(comment=>{
           return <li>{comment.text}</li>
         })}</h2>
+        {/* <button onClick={goBack()}> Go back </button> */}
         </div> : <p>Loading...</p>}
       </div>
     );

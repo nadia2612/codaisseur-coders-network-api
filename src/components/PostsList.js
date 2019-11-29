@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import fetchPosts from "../store/postsList/actions";
-//import ReactMarkdown from "react-markdown"
+import { Link } from "react-router-dom";
 
 export class PostsList extends Component {
   componentDidMount() {
@@ -21,7 +21,7 @@ export class PostsList extends Component {
           <div>
             <p>We have {this.props.posts.count} posts!</p>
             {this.props.posts.rows.map(post => {
-              return <p>{post.title}</p>;
+              return <Link to={`/read/${post.id}`}><p>{post.title}</p></Link>;
             })}
           </div>
         )}
