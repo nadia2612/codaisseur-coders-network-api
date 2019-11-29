@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 
 class Toolbar extends React.Component {
   render() {
+    console.log("This.Props",this.props)
     return (
       <div>
         <ul>
@@ -37,6 +38,7 @@ class Toolbar extends React.Component {
 }
 
 function mapStateToProps(reduxState) {
+  console.log("REDUX STATE from TOOLBAR",reduxState)
   return {
     profile: reduxState.auth.profile
   };

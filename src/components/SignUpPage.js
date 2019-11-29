@@ -80,8 +80,10 @@ class SignUpPage extends Component {
   }
 }
 function mapStateToProps(reduxState) {
+  console.log("RS",reduxState)
   return {};
 }
+
 
 const mapDispatchToProps = {
   signup

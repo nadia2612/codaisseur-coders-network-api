@@ -2,10 +2,10 @@
 import api from "../../api";
 
 export default function login(email, password) {
-  console.log("action ");
   // Return the thunk itself, i.e. a function
   return function thunk(dispatch, getState) {
     // TODO:
+    console.log("action ");
     // (1) make a POST API request to `/login`
     // (2) after getting back the access token,
     //      dispatch the `saveAccessToken` action
@@ -16,6 +16,8 @@ export default function login(email, password) {
         password
       }
     }).then(token => {
+      console.log("got here",token.jwt);
+      
       api("/me", { jwt: token.jwt })
       .then(profile =>
         dispatch(userLoggedIn(token.jwt, profile))

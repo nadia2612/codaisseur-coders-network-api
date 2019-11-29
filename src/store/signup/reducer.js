@@ -7,7 +7,7 @@ const initialState = {
     switch (action.type) {
       case "auth/USER_LOGGED_IN": {
         // => Ask yourself: what is action.payload?
-        return {...state ,jwt:action.payload};
+        return { accessToken: action.payload};
       }
       default: {
         return state;
