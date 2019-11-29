@@ -9,8 +9,7 @@ export default class Developer extends React.Component {
     return (
       <div>
         <ul>
-          <strong>name:</strong>
-          {this.props.name} email:{this.props.email}
+          name:  <strong>{this.props.name}</strong> email:  <strong>{this.props.email}</strong>
         </ul>
       </div>
     );

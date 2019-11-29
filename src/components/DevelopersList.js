@@ -54,11 +54,11 @@ class DevelopersList extends Component {
 
             {this.props.devs.rows
               .filter(developer => {
-                return developer.name.toLowerCase().includes(this.state.search);
+                return developer.name.toLowerCase().includes(this.state.search.toLowerCase());
               })
-              .map(developer => {
+              .map((developer,index )=> {
                 return (
-                  <Developer name={developer.name} email={developer.email} />
+                 <Developer key={index} name={developer.name} email={developer.email} />
                 );
               })}
           </div>
