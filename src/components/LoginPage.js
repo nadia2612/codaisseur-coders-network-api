@@ -27,7 +27,7 @@ class LoginPage extends Component {
       <div>
         <h1>Login</h1>
         <form onSubmit={this.handleSubmit}>
-          <p>
+          <p>E-mail: <br/>
             <input
               type="email"
               name="email"
@@ -35,7 +35,7 @@ class LoginPage extends Component {
               onChange={this.handleChange}
             />
           </p>
-          <p>
+          <p>Password: <br/>
             <input
               type="password"
               name="password"
