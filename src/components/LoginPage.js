@@ -23,6 +23,7 @@ class LoginPage extends Component {
   };
 
   render() {
+    console.log("PROPS",this.props)
     return (
       <div>
         <h1>Login</h1>
@@ -52,6 +53,7 @@ class LoginPage extends Component {
   }
 }
 function mapStateToProps(reduxState) {
+  console.log("RS",reduxState)
   return {};
 }
 

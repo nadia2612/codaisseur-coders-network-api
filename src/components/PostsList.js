@@ -4,6 +4,8 @@ import fetchPosts from "../store/postsList/actions";
 import { Link } from "react-router-dom";
 
 export class PostsList extends Component {
+  
+
   componentDidMount() {
     console.log("cdm", this.props);
     this.props.dispatch(fetchPosts());
@@ -12,6 +14,7 @@ export class PostsList extends Component {
 
   render() {
     const loading = !this.props.posts.rows;
+console.log(this.prop)
     return (
       <div>
         <h1>Posts</h1>
@@ -23,6 +26,7 @@ export class PostsList extends Component {
             {this.props.posts.rows.map(post => {
               return <Link to={`/read/${post.id}`}><p>{post.title}</p></Link>;
             })}
+            
           </div>
         )}
       </div>
@@ -30,6 +34,7 @@ export class PostsList extends Component {
   }
 }
 const mapStateToProps = reduxState => {
+  console.log("STATERED", reduxState)
   return {
     posts: reduxState.posts
   };

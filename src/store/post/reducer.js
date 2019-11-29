@@ -9,6 +9,14 @@ export default function reducer(state = initialState, action) {
     case "post/SET_COMMENTS": {
       return { ...state, comments: action.payload };
     }
+    case "post/SET_LIKE":{
+      return { ...state, like: action.payload };
+
+    }
+    case "post/SET_DISLIKE":{
+      return { ...state, disLike: action.payload };
+
+    }
     default: {
       return state;
     }
