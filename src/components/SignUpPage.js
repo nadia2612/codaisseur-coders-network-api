@@ -29,7 +29,7 @@ class SignUpPage extends Component {
             (this.state.password === this.state.verifyPassword)
             && (this.state.password !== "")
     return (
-      <div>
+      <div className="SignUp">
         <h1>SignUp</h1>
         <form onSubmit={this.handleSubmit}>
         <p>Name: <br/>

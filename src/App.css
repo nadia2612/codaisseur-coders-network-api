@@ -1,20 +1,38 @@
 .App {
+  display: block;
+  /* flex-wrap: wrap; */
   text-align: center;
+  margin:1px;
+  background: lightgrey;
+  padding-bottom:195px;
 }
 
-.App-logo {
-  height: 40vmin;
+.SignUp{
+  margin: 90px;
+  padding-bottom:295px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Toolbar{
+border: groove;
+margin: 5px;
+background: gray
+}
+
+a{
+  margin: 35px
+}
+
+p{
+  margin: 0px;
+}
+
+form{ 
+  margin:38px
+}
+
+.Homepage{
+  display: block;
+  
 }
 
 .App-link {

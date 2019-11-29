@@ -25,7 +25,7 @@ class LoginPage extends Component {
   render() {
     console.log("PROPS",this.props)
     return (
-      <div>
+      <div className="LogIn">
         <h1>Login</h1>
         <form onSubmit={this.handleSubmit}>
           <p>E-mail: <br/>

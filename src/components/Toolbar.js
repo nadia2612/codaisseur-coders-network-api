@@ -6,28 +6,22 @@ class Toolbar extends React.Component {
   render() {
     console.log("This.Props",this.props)
     return (
-      <div>
+      <div className="Toolbar">
         <ul>
           <nav>
             <Link to="/">Home</Link>
-          </nav>
-
-          <nav>
+          
             <Link to="/developers">Developers</Link>
-          </nav>
-
-          <nav>
+         
            
             {this.props.profile ? (
               <div>Logged in: {this.props.profile.name}</div>
             ) : (
               <Link to="/login">Log in</Link>
             )}
-          </nav>
-          <nav>
+         
             <Link to="/posts">All posts</Link>
-          </nav>
-          <nav>
+         
             <Link to="/signup">Sign up</Link>
           </nav>
 

@@ -27,7 +27,6 @@ export class Like extends React.Component {
               this.implementLike();
             }}
           >
-            {" "}
             Like:{this.props.post.post_likes.length}
           </button>
           <button
